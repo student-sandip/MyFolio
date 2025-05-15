@@ -67,8 +67,8 @@
   }
 }
 
-.resume-flip-front {
-  animation: beat 1s infinite;
-  animation: beat 1.2s ease-in-out infinite;
-  transform-origin: center;
+@media (max-width: 768px) {
+  .resume-flip-front {
+    animation: beat 1.2s ease-in-out infinite;
+  }
 }
