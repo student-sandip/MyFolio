@@ -158,12 +158,13 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   z-index: 997;
+  
 }
 
 .header .logo {
-  line-height: 1;
+  line-height: 2.5;
 }
 
 .header .logo img {
@@ -178,9 +179,41 @@ h6 {
   color: var(--heading-color);
 }
 
-.scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+.header .logo i {
+  font-size: 2rem;
+  color: var(--accent-color);
 }
+
+
+/*  Breadcrumb Section  */
+
+.breadcrumbs {
+  padding: 15px 30px;
+  background-color: #000; /* Keeps it black */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: #007bff; /* Bootstrap blue on hover */
+}
+
+.breadcrumb-item.active {
+  color: #fff;
+  font-weight: 500;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
