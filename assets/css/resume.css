@@ -67,6 +67,10 @@
   }
 }
 
+.resume-flip-front {
+  animation: beat 1.9s ease-in-out infinite; 
+}
+
 @media (max-width: 768px) {
   .resume-flip-front {
     animation: beat 1.2s ease-in-out infinite;
