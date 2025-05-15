@@ -57,3 +57,19 @@
   text-decoration: none;
   color: white;
 }
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.resume-flip-front {
+  animation: beat 1s infinite;
+}
+.resume-flip-front {
+  animation: beat 1.2s ease-in-out infinite;
+}
