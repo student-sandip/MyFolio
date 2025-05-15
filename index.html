@@ -8,6 +8,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <link rel="stylesheet" href="assets/css/resume.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,63 +58,6 @@
   50%  { transform: scale(1) rotate(0deg); }
   75%  { transform: scale(1.2) rotate(-10deg); }
   100% { transform: scale(1) rotate(0deg); }
-}
-</style>
-
-<!-- resume section -->
-<style>
-.flip-btn-container {
-  display: flex;
-  justify-content: baseline;
-  margin-top: 5px;
-}
-
-.flip-card {
-  width: 180px;
-  height: 50px;
-  perspective: 1000px;
-}
-
-.flip-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-front, .flip-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backface-visibility: hidden;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.flip-front {
-  background-color: #007bff;
-  color: white;
-}
-
-.flip-back {
-  background-color: #070707;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.flip-back a {
-  text-decoration: none;
-  color: white;
 }
 </style>
   <!-- Main CSS File -->
@@ -188,19 +134,16 @@
                 <p><strong>Address: </strong> <span>Adhikari Bari near West Banamalipur RG Party, Barasat, WB, 700124</span></p>
                 <!-- <p><a href="https://drive.google.com/file/d/19tE5sG75qAbbWce05Jog7VTNHQ84ove8/view?usp=drive_link/view" target="_blank" rel="noopener" class="flip-inner">
                     <i class="fas fa-chevron-right"></i> <i class="fas fa-file-alt"></i><div class="flip-front">View My Resume </div> <div class="flip-back">Click</div></a> -->
-
-
-                <p>
-                    <div class="flip-btn-container">
-                      <div class="flip-card">
-                        <div class="flip-inner">
-                        <div class="flip-front">View My Resume</div>
-                          <div class="flip-back"><a href="https://drive.google.com/file/d/19tE5sG75qAbbWce05Jog7VTNHQ84ove8/view?usp=drive_link/view" target="_blank" rel="noopener">Click</a></div>
+<p>
+                    <div class="resume-btn-container">
+                      <div class="resume-flip-card">
+                        <div class="resume-flip-inner">
+                        <div class="resume-flip-front">View My Resume</div>
+                          <div class="resume-flip-back"><a href="https://drive.google.com/file/d/19tE5sG75qAbbWce05Jog7VTNHQ84ove8/view?usp=drive_link/view" target="_blank" rel="noopener">Click</a></div>
                         </div>
                       </div>
                     </div>
-
-                </p>
+              </p>
               </div>
             </div>
 
@@ -492,61 +435,105 @@
             <!-- <li data-filter=".filter-service">Services</li> -->
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+         <!-- Start of Flip Cards for 5 Projects -->
+<div class="row gx-2 gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" style="
+    margin-left: 12px;
+    margin-right: 53px;
+">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/Snapgram.jpg" class="img-fluid" alt="">
-
-              <div class="portfolio-info">
-                <h4>Snapgram</h4>
-                <p>Click here to get more details about the project.</p>
-                <a href="assets/img/portfolio/Snapgram.jpg" title="Project 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="1stProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/event-manage.jpg" class="img-fluid" alt="">
-
-              <div class="portfolio-info">
-                <h4>Event Management App</h4>
-                <p>Simply For manage Your Events OR Works.</p>
-                <a href="assets/img/portfolio/event-manage.jpg" title="Project 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="2ndProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/pglife.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>PG Life Website</h4>
-                <p>Find nearby PG's near You.</p>
-                <a href="assets/img/portfolio/pglife.jpg" title="Project 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="3rdProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/my-portfolio.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>My Portfolio</h4>
-                <p>My Portfolio Website.</p>
-                <a href="assets/img/portfolio/my-portfolio.jpg" title="Project 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="4thProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/calculator-app.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>5th project</h4>
-                <p>It's will be 5th Project.</p>
-                <a href="assets/img/portfolio/calculator-app.jpg" title="Project 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="5thProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-
+  <!-- Project 1 -->
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/Snapgram.jpg" class="img-fluid" alt="Snapgram">
         </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>Snapgram</h4>
+            <p>Click here to get more details about the project.</p>
+            <a href="1stProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/event-manage.jpg" class="img-fluid" alt="Event Management App">
+        </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>Event Management App</h4>
+            <p>Simply For manage Your Events OR Works.</p>
+            <a href="2ndProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/pglife.jpg" class="img-fluid" alt="PG Life Website">
+        </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>PG Life Website</h4>
+            <p>Find nearby PG's near You.</p>
+            <a href="3rdProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/my-portfolio.jpg" class="img-fluid" alt="My Portfolio">
+        </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>My Portfolio</h4>
+            <p>My Portfolio Website.</p>
+            <a href="4thProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/calculator-app.jpg" class="img-fluid" alt="Calculator App">
+        </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>5th Project</h4>
+            <p>It's will be 5th Project.</p>
+            <a href="5thProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End of Flip Cards -->
+
 
       </div>
       </div> <!-- End Portfolio Container -->
