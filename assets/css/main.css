@@ -563,31 +563,32 @@ h6 {
 footer shine effect
 --------------------------------------------------------------*/
 
+/* Footer Social Links - Unified for all devices */
 .footer .social-links a {
-  width: 32px;      /* was 40px */
-  height: 32px;     /* was 40px */
-  font-size: 14px;  /* was 16px */
-}
-
-.footer .social-links a i {
-  font-size: 1.2rem; /* was 2rem */
-}
-
-.social-links a {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0 5px;
+  transition: 0.3s;
   position: relative;
-  display: inline-block;
   overflow: hidden;
 }
 
-.social-links a i {
-  position: relative;
+.footer .social-links a i {
+  font-size: 1.2rem;
   z-index: 1;
-  font-size: 2rem;
   transition: color 0.3s;
+  position: relative;
 }
 
 /* Shiny effect */
-.social-links a::after {
+.footer .social-links a::after {
   content: '';
   position: absolute;
   top: -50%;
@@ -607,6 +608,18 @@ footer shine effect
   }
   100% {
     left: 125%;
+  }
+}
+
+/* Responsive: Ensure no mobile override breaks the effect */
+@media (max-width: 575px) {
+  .footer .social-links a {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+  .footer .social-links a i {
+    font-size: 1rem;
   }
 }
 
