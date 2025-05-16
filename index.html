@@ -42,6 +42,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
   <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -67,17 +69,34 @@
 
 <!-- send message style -->
  <style>
-@keyframes shake {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(-8px); }
-  40% { transform: translateX(8px); }
-  60% { transform: translateX(-8px); }
-  80% { transform: translateX(8px); }
-  100% { transform: translateX(0); }
+.fly-animate {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.shake-animate {
-  animation: shake 0.7s infinite;
+.fly-animate i {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.fly-animate:hover {
+  background-color: #0056b3;
+}
+
+.fly-animate:hover i {
+  transform: translateX(8px) rotate(20deg);
+  color: #ffffff;
 }
 
  </style>
@@ -683,10 +702,10 @@
   <input type="hidden" name="_next" value="https://student-sandip.github.io/MyFolio/thank-you.html" />
   <!-- <input type="hidden" name="_captcha" value="false" /> -->
 
-  <button type="submit" class ="shake-animate"
-    style="margin-top: 20px; width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-    Send Message
-  </button>
+  <button type="submit" class="fly-animate"
+  style="margin-top: 20px; width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+  Send&nbsp;<i class="fas fa-paper-plane"></i>
+</button>
 </form>
 </div>
 
