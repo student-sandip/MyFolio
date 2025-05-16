@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="assets/css/resume.css">
   <link rel="stylesheet" href="assets/css/project.css">
+  <link rel="stylesheet" href="assets/css/scroll.css">
 
   <!-- Favicons -->
   <link href="assets/img/favicon/favicon.ico" rel="icon">
@@ -567,6 +568,25 @@
     </div>
   </div>
 
+
+
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <div class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <img src="assets/img/portfolio/6thimage.jpg" class="img-fluid" alt="Event Management App">
+        </div>
+        <div class="project-card-back">
+          <div class="content">
+            <h4>6th Project</h4>
+            <p>6th project will upload here.</p>
+            <a href="2ndProject.html" class="btn btn-outline-light mt-2">Check Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 <!-- End of Flip Cards -->
 
@@ -760,6 +780,29 @@ setInterval(() => {
   statsIndex = (statsIndex + 1) % statsImages.length;
   statsImg.forEach(img => img.src = statsImages[statsIndex]);
 }, 4000); 
+</script>
+
+
+<!-- scroll ball -->
+
+<script>
+  const scrollTopBtn = document.getElementById("scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 </script>
 
   <!-- Main JS File -->

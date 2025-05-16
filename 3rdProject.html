@@ -44,6 +44,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/scroll.css">
 </head>
 
 <body class="portfolio-details-page">
@@ -203,6 +204,27 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- scroll ball -->
+<script>
+  const scrollTopBtn = document.getElementById("scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
 
 </body>
 

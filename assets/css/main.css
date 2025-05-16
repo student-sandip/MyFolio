@@ -542,23 +542,6 @@ h6 {
 }
 
 
-/* section tag's img chenges autommetic */
-
-.stats.section.accent-background {
-  animation: statsBgColor 12s infinite linear;
-  transition: background 1s;
-}
-
-@keyframes statsBgColor {
-  0%   { background: #e3f0ff; }   /* Light Blue */
-  20%  { background: #fffbe3; }   /* Light Yellow */
-  40%  { background: #e3ffe3; }   /* Light Green */
-  60%  { background: #ffe3f0; }   /* Light Pink */
-  80%  { background: #e3f7ff; }   /* Light Cyan */
-  100% { background: #e3f0ff; }   /* Back to Light Blue */
-}
-
-
 /*--------------------------------------------------------------
 footer shine effect
 --------------------------------------------------------------*/
