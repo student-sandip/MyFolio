@@ -12,19 +12,19 @@
   <link rel="stylesheet" href="assets/css/project.css">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon/favicon.ico" rel="icon">
+  <!-- <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Standard favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
 
 <!-- Apple Touch Icon (for iPhones/iPads) -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
 
 <!-- Android Chrome -->
-<link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
 
 
   <!-- Fonts -->
@@ -229,17 +229,12 @@
 
 
       <section id="stats" class="stats section accent-background">
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-      <img src="assets/img/testimonials-bg.jpg" alt="" data-aos="fade-in">
-      <img src="assets/img/services.jpg" alt="" data-aos="fade-in">
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-      <img src="assets/img/xca.avif" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-        </div>
-      </div>
-    </section>
+  <img class="stats-slideshow" src="assets/img/slides/slide1.jpg" alt="" data-aos="fade-in" style="width:100%;max-height:300px;object-fit:cover;">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+    </div>
+  </div>
+</section>
 
 
     <!-- Resume Section -->
@@ -326,13 +321,12 @@
 
 
  <section id="stats" class="stats section accent-background">
-      <img src="assets/img/testimonials-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-        </div>
-      </div>
-    </section>
+  <img class="stats-slideshow" src="assets/img/slides/slide1.jpg" alt="" data-aos="fade-in" style="width:100%;max-height:300px;object-fit:cover;">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+    </div>
+  </div>
+</section>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -443,12 +437,12 @@
 
     <!-- Stats Section -->
     <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
+  <img class="stats-slideshow" src="assets/img/slides/slide1.jpg" alt="" data-aos="fade-in" style="width:100%;max-height:300px;object-fit:cover;">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+    </div>
+  </div>
+</section>
 
           
         </div>
@@ -584,19 +578,12 @@
 
 
     <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/testimonials-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          
-        </div>
-
-      </div>
-
-    </section>
+  <img class="stats-slideshow" src="assets/img/slides/slide1.jpg" alt="" data-aos="fade-in" style="width:100%;max-height:300px;object-fit:cover;">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+    </div>
+  </div>
+</section>
 
 
     <!-- Contact Section -->
@@ -752,6 +739,27 @@
       $(this).addClass('filter-active');
     });
   });
+</script>
+
+
+<!-- pictures slideshow -->
+
+<script>
+const statsImages = [
+  "assets/img/slides/slide1.jpg",
+  "assets/img/slides/slide2.jpg",
+  "assets/img/slides/slide3.jpg",
+  "assets/img/slides/slide4.jpg",
+  "assets/img/slides/slide5.jpg",
+  "assets/img/slides/slide6.jpg",
+  "assets/img/slides/slide7.jpg",
+];
+let statsIndex = 0;
+const statsImg = document.querySelectorAll('.stats-slideshow');
+setInterval(() => {
+  statsIndex = (statsIndex + 1) % statsImages.length;
+  statsImg.forEach(img => img.src = statsImages[statsIndex]);
+}, 4000); 
 </script>
 
   <!-- Main JS File -->
