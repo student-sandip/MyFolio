@@ -541,6 +541,75 @@ h6 {
   bottom: 15px;
 }
 
+
+/* section tag's img chenges autommetic */
+
+.stats.section.accent-background {
+  animation: statsBgColor 12s infinite linear;
+  transition: background 1s;
+}
+
+@keyframes statsBgColor {
+  0%   { background: #e3f0ff; }   /* Light Blue */
+  20%  { background: #fffbe3; }   /* Light Yellow */
+  40%  { background: #e3ffe3; }   /* Light Green */
+  60%  { background: #ffe3f0; }   /* Light Pink */
+  80%  { background: #e3f7ff; }   /* Light Cyan */
+  100% { background: #e3f0ff; }   /* Back to Light Blue */
+}
+
+
+/*--------------------------------------------------------------
+footer shine effect
+--------------------------------------------------------------*/
+
+.footer .social-links a {
+  width: 32px;      /* was 40px */
+  height: 32px;     /* was 40px */
+  font-size: 14px;  /* was 16px */
+}
+
+.footer .social-links a i {
+  font-size: 1.2rem; /* was 2rem */
+}
+
+.social-links a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.social-links a i {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+/* Shiny effect */
+.social-links a::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.2) 100%);
+  transform: skewX(-25deg);
+  z-index: 2;
+  pointer-events: none;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
