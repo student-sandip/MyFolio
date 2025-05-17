@@ -12,9 +12,11 @@
   <link rel="stylesheet" href="assets/css/project.css">
   <link rel="stylesheet" href="assets/css/scroll.css">
   <link rel="stylesheet" href="assets/css/mescroll.css">
+  <link rel="stylesheet" href="assets/css/chatbot.css">
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Favicons -->
   <link href="assets/img/favicon/favicon.ico" rel="icon">
@@ -772,7 +774,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://www.linkedin.com/in/sandip-saha-dev">Sandip</a>
+        Designed by <a href="https://www.linkedin.com/in/sandip-saha-dev">Sandip Saha</a>
       </div>
     </div>
 
@@ -898,6 +900,67 @@ setInterval(() => {
     image.style.transform = 'rotateX(0deg) rotateY(0deg)';
   });
 </script>
+
+<!-- chatbot logic  -->
+
+<script>
+  function toggleChat() {
+    const chatbot = document.getElementById("chatbot");
+    chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+  }
+
+  // Close on click outside
+  document.addEventListener("click", function (event) {
+    const chatbot = document.getElementById("chatbot");
+    const toggle = document.getElementById("chat-toggle");
+
+    if (
+      chatbot.style.display === "block" &&
+      !chatbot.contains(event.target) &&
+      !toggle.contains(event.target)
+    ) {
+      chatbot.style.display = "none";
+    }
+  });
+
+  function sendMessage() {
+    const input = document.getElementById("user-input");
+    const box = document.getElementById("chat-box");
+    const sendIcon = document.getElementById("send-icon");
+    const msg = input.value.trim();
+
+    if (!msg) return;
+
+    // Fly animation
+    sendIcon.classList.add("fly");
+    setTimeout(() => sendIcon.classList.remove("fly"), 600);
+
+    // Add user message
+    box.innerHTML += `<div><strong>You:</strong> ${msg}</div>`;
+
+    // Basic replies
+    let reply = "Sorry, I don’t understand.";
+    const lowerMsg = msg.toLowerCase();
+
+    if (lowerMsg.includes("name")) {
+      reply = "My name is Senu! 😊";
+    } else if (lowerMsg.includes("project")) {
+      reply = "You can check out the 'Projects' section above!";
+    } else if (lowerMsg.includes("contact")) {
+      reply = "You can reach me via the contact form or email!";
+    }
+
+    // Bot reply
+    setTimeout(() => {
+      box.innerHTML += `<div><strong>Senu:</strong> ${reply}</div>`;
+      box.scrollTop = box.scrollHeight;
+    }, 500);
+
+    input.value = "";
+  }
+</script>
+
+
 
 
 
@@ -1098,6 +1161,32 @@ setInterval(() => {
     </div>
   </div>
 </div>
+
+
+<!-- chatbot -->
+
+<!-- Toggle Button -->
+<div id="chat-toggle" onclick="toggleChat()">
+  <span class="thinking-bubble">💬</span>
+</div>
+
+
+<!-- Chatbot Container -->
+<div id="chatbot" class="chatbot">
+  <div class="chat-header">Hi, I'm Senu 👋</div>
+  <div id="chat-box" class="chat-box"></div>
+
+  <!-- Chat Input -->
+  <div class="chat-input-container">
+    <input type="text" id="user-input" placeholder="Ask me anything..." />
+    <button type="submit" onclick="sendMessage()">
+      <i id="send-icon" class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+
+
 
 
 
