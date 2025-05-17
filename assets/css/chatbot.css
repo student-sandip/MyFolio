@@ -1,19 +1,19 @@
-/* Toggle button */
+/* Chat Toggle Button */
 #chat-toggle {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background-color: #007bff;
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   cursor: pointer;
   z-index: 9999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
@@ -21,9 +21,164 @@
   transform: scale(1.1);
 }
 
-/* Chatbot window */
+#chatbot {
+  pointer-events: auto;
+}
+
+/* Chatbot Container */
 .chatbot {
   display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  width: 320px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  z-index: 9998;
+  font-family: 'Segoe UI', sans-serif;
+  animation: flyIn 0.4s ease;
+}
+
+@keyframes flyIn {
+  from {
+    transform: translateY(40px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Header */
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Chat Box */
+.chat-box {
+  max-height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Input Box */
+.chat-input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+.chat-input-container input[type="text"] {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 14px;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input-container button {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-input-container button i {
+  font-size: 16px;
+}
+
+/* Thinking Bubble Animation */
+.thinking-bubble {
+  animation: bounce 1.4s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Chat Bubbles */
+.user-msg, .bot-msg {
+  padding: 10px 14px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background-color: #d0ebff;
+  align-self: flex-end;
+}
+
+.bot-msg {
+  background-color: #eee;
+  align-self: flex-start;
+}
+
+/* Plane Fly Animation */
+.fly {
+  animation: fly 0.6s ease forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(60px, -60px);
+    opacity: 0;
+  }
+}
+
+.chatbot {
+  transition: all 0.3s ease;
+}
+
+/* for chatbot box float */
+#chatbot-floating-wrapper {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 320px;
+  height: 400px;
+  pointer-events: none; /* So wrapper doesn’t block clicks */
+  z-index: 9998;
+}
+
+@keyframes floatMove {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(20px, -20px); }
+  50%  { transform: translate(40px, 0); }
+  75%  { transform: translate(20px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+.floating-chatbot {
   position: fixed;
   bottom: 80px;
   left: 20px;
@@ -34,155 +189,24 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   z-index: 9998;
-  animation: flyIn 0.4s ease;
-}
-
-@keyframes flyIn {
-  from {
-    transform: translateY(50px) scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-.chat-header {
-  background: #007bff;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.chat-box {
-  height: 200px;
-  padding: 10px;
-  overflow-y: auto;
-  font-size: 14px;
-  background-color: #f7f7f7;
-}
-
-.chat-input-container {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.chat-input-container input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  outline: none;
-}
-
-.chat-input-container {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.chat-input-container input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  outline: none;
-}
-
-.chat-input-container button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 12px;
-  margin-left: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-
-.chat-input-container button i {
-  margin: 0;
+  animation: floatMove 8s ease-in-out infinite;
 }
 
 
-/* Fly animation */
-.fly {
-  animation: flyUp 0.6s ease forwards;
+/*  make 👋 animated*/
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
 }
 
-@keyframes flyUp {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(100px, -100px) rotate(45deg);
-    opacity: 0;
-  }
-}
-
-
-.chat-input-container {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.chat-input-container input[type="text"] {
-  flex: 1;
-  padding: 10px 14px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  outline: none;
-  margin-right: 10px;
-  height: 44px;
-}
-
-.chat-input-container button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.chat-input-container button i {
-  font-size: 16px;
-}
-
-.thinking-bubble {
+.wave-hand {
   display: inline-block;
-  animation: thinking 1.2s infinite ease-in-out;
-  font-size: 24px;
-}
-
-@keyframes thinking {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%; /* pivot from the bottom right of the emoji */
 }
