@@ -1,3 +1,27 @@
+.welcome-bubble {
+  background-color: #eee;
+  align-self: flex-start;
+  padding: 10px 14px;
+  border-radius: 20px;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.welcome-bubble.show {
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.welcome-bubble.hide {
+  opacity: 0;
+  transform: translateY(30px);
+}
+ 
+
+
 /* Chat Toggle Button */
 #chat-toggle {
   position: fixed;
