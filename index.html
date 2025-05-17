@@ -105,6 +105,31 @@
  </style>
 
 
+<!-- aboutme picture style -->
+
+<style>
+.image-tilt {
+  perspective: 1000px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.tilt-img {
+  width: 100%;
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.image-tilt:hover .tilt-img {
+  filter: grayscale(0%);
+}
+
+  
+</style>
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -167,8 +192,11 @@
 
             <div class="row justify-content-between gy-4">
               <div class="col-lg-5">
-                <img src="assets/img/imgg.avif" class="img-fluid" alt="">
-              </div>
+  <div class="image-tilt">
+    <img src="assets/img/imgg.avif" class="img-fluid tilt-img" alt="">
+  </div>
+</div>
+
               <div class="col-lg-7 about-info">
                 <p><strong>Name: </strong> <span>Sandip Saha</span></p>
                 <p><strong>Age: </strong> <span>21</span></p>
@@ -832,6 +860,28 @@ setInterval(() => {
     });
   });
 </script>
+
+
+
+<script>
+  const container = document.querySelector('.image-tilt');
+  const image = container.querySelector('.tilt-img');
+
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 55; // Max 35° tilt
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -55;
+
+    image.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+  });
+</script>
+
+
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
