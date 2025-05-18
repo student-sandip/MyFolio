@@ -62,9 +62,26 @@
 
 <style>
   /* WhatsApp Floating Icon */
+@keyframes shake-icon {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+
+/* WhatsApp Float Button */
 .whatsapp-float {
   position: fixed;
-  bottom: 70px; /* Just above scroll-to-top */
+  bottom: 70px;
   right: 12px;
   background-color: #25D366;
   color: white;
@@ -84,12 +101,16 @@
   transition: all 0.6s ease;
 }
 
-/* Show class triggers float up once */
+/* Show class */
 .whatsapp-float.show {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+.whatsapp-float i {
+  animation: shake-icon 1s infinite ease-in-out;
+}
+
 
 </style>
 
@@ -925,9 +946,6 @@ setInterval(() => {
   });
 </script>
 
-
-
-
 <script>
   const container = document.querySelector('.image-tilt');
   const image = container.querySelector('.tilt-img');
@@ -1284,20 +1302,17 @@ function getBotResponse(msg) {
 
 <!-- Floating Toggle Button -->
 <div id="chat-toggle" onclick="toggleChat()">
-  <span class="thinking-bubble">💬</span>
+  <span class="chatbot-robot">🤖</span>
 </div>
-
-
-
 
 <div id="chatbot-floating-wrapper">
   <div id="chatbot" class="chatbot floating-chatbot">
     <!-- Existing chatbot content -->
     <div class="chat-header"> <b>Hi, I'm Senu <span class="wave-hand">👋</span></b></div>
     <div id="chat-box" class="chat-box">
-<div id="welcome-popup-msg" class="bot-msg welcome-bubble" style="display: none;">
-              <span class="wave-hand">👋</span> Hi, I’m Senu  How can I help you?
-</div>
+      <div id="chat-welcome-msg" class="bot-msg welcome-bubble" style="display: none;">
+            <span class="wave-hand">👋</span> Hi, I’m Senu  How can I help you?
+      </div>
     </div>
     <div class="chat-input-container">
       <input type="text" id="user-input" placeholder="Ask me anything..." />
@@ -1307,8 +1322,6 @@ function getBotResponse(msg) {
     </div>
   </div>
 </div>
-
-
 
 </body>
 
