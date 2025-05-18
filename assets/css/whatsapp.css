@@ -18,7 +18,7 @@
 /* WhatsApp Float Button */
 .whatsapp-float {
   position: fixed;
-  bottom: 100px;
+  bottom: 75px;
   right: 17.5px;
   background-color: #25D366;
   color: white;

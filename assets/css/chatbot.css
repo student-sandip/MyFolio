@@ -1,8 +1,8 @@
 /* Chat toggle button */
 #chat-toggle {
   position: fixed;
-  bottom: 30px;
-  left: 30px;
+  bottom: 16px !important;
+  left: 17px;
   width: 55px;
   height: 55px;
   background-color: #0b5ed7;
