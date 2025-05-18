@@ -112,7 +112,14 @@
   color: white;
   align-self: flex-end;
   margin-left: auto;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;           /* Limit korle responsive thakbe */
+  width: fit-content;       /* Eta dynamic kore */
+  word-wrap: break-word;    /* Long words wrap korbe */
+  margin-bottom: 5px;
 }
+
 .bot-msg {
   background-color: #eaeaea;
   color: #333;
