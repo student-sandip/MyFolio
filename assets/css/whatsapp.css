@@ -1,0 +1,49 @@
+  /* WhatsApp Floating Icon */
+@keyframes shake-icon {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 17.5px;
+  background-color: #25D366;
+  color: white;
+  font-size: 26px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  transition: all 0.6s ease;
+}
+
+/* Show class */
+.whatsapp-float.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.whatsapp-float i {
+  animation: shake-icon 1s infinite ease-in-out;
+}
