@@ -22,4 +22,6 @@
   animation: heartbeat 1.5s ease-in-out infinite;
   display: inline-block;
   transition: transform 0.3s ease;
+  -webkit-transform: translateZ(0); /* Mobile GPU acceleration */
+
 }
