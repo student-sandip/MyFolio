@@ -1146,10 +1146,8 @@ setInterval(() => {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
-      // Scroll down → hide header
       header.style.top = "-100px";
     } else {
-      // Scroll up → show header
       header.style.top = "0";
     }
 
