@@ -1638,7 +1638,7 @@ section,
 }
 
 .service-item:hover {
-  background-color: #11f0f0;
+  background-color: #fab056;
   transform: translateY(-11px); 
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
