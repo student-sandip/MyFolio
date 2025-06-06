@@ -941,6 +941,22 @@ setInterval(() => {
   container.addEventListener('mouseleave', () => {
     image.style.transform = 'rotateX(0deg) rotateY(0deg)';
   });
+
+  // Mobile (touch)
+  tiltContainer.addEventListener('touchmove', (e) => {
+    const rect = tiltContainer.getBoundingClientRect();
+    const touch = e.touches[0];
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+    handleTilt(x, y, rect.width, rect.height);
+  });
+
+  // Reset on leave or touch end
+  ['mouseleave', 'touchend'].forEach(evt => {
+    tiltContainer.addEventListener(evt, () => {
+      tiltImage.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    });
+  });
 </script>
 
   <!-- Main JS File -->
