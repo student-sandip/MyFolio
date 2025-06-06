@@ -1628,3 +1628,17 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+.service-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.service-item:hover {
+  background-color: #11f0f0;
+  transform: translateY(-11px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
