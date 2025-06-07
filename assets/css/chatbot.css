@@ -94,10 +94,11 @@
 /* Chat box messages */
 .chat-box {
   max-height: 300px;
-  padding: 10px;
+  padding: 0 10px 10px 10px; /* removed top padding */
   overflow-y: auto;
   font-size: 14px;
   background-color: #f9f9f9;
+  
 }
 .user-msg,
 .bot-msg {
@@ -217,4 +218,21 @@
 }
 .floating-chatbot {
   animation: float2DRotate 5s ease-in-out infinite;
+}
+
+.chat-box .user-msg:first-child,
+.chat-box .bot-msg:first-child {
+  margin-top: 0 !important;
+}
+
+.welcome-bubble {
+  background: #e2f0ff;
+  color: #333 !important; /* force visible text */
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 0;
+  font-style: italic;
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
