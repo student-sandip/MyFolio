@@ -24,7 +24,6 @@
   will-change: transform;
 }
 
-/* Shine layer */
 .image-tilt::before {
   content: "";
   position: absolute;
@@ -55,13 +54,10 @@
   }
 }
 
-/* When hovered: remove grayscale */
 .image-tilt:hover img,
 .image-tilt:hover .tilt-img {
   filter: grayscale(0%);
 }
-
-/* Overlay Text */
 .image-tilt .overlay-text {
   position: absolute;
   top: 0;
@@ -89,7 +85,6 @@
   opacity: 1;
 }
 
-/* Wave icon inside text */
 .wave-hand img {
   width: 1.2em;
   height: 1.2em;
@@ -97,7 +92,6 @@
   margin-left: 5px;
 }
 
-/* Mobile optimization */
 @media (max-width: 768px) {
   .image-tilt .overlay-text {
     font-size: 0.95rem;
