@@ -57,6 +57,20 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- for cirtification icon spin -->
+  <style>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-icon {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+</style>
+
+
 <!-- more detals style -->
 <style>
   .btn-animated {
@@ -186,6 +200,7 @@
         <li><a href="#resume" class="nav-link">Summary</a></li>
         <li><a href="#services" class="nav-link">Skills</a></li>
         <li><a href="#portfolio" class="nav-link">Projects</a></li>
+        <li><a href="#certification" class="nav-link">Certifications</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -674,13 +689,66 @@
     </section><!-- /Portfolio Section -->
 
 
-    <section id="stats" class="stats section accent-background">
+<section id="stats" class="stats section accent-background">
   <img class="stats-slideshow" src="assets/img/slides/slide1.jpg" alt="" data-aos="fade-in" style="width:100%;max-height:300px;object-fit:cover;">
   <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
     <div class="row gy-4">
     </div>
   </div>
 </section>
+
+
+
+   <!-- Certifications Section -->
+<section id="certification" class="certification section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2 class="heading"><i class="fas fa-certificate spin-icon me-2"></i> My <span>Certifications</span></h2>
+    <p>Here are some of my earned certifications to showcase my learning journey and achievements.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <!-- Certificate 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="cert-card shadow p-3 bg-white rounded text-center">
+          <img src="assets/img/certificates/java-certificate.jpg" class="img-fluid mb-3" alt="Java Certificate">
+          <h5 class="mb-1">Java Programming</h5>
+          <p class="small text-muted">Issued by XYZ Academy</p>
+          <a href="assets/certificates/java-certificate.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="cert-card shadow p-3 bg-white rounded text-center">
+          <img src="assets/img/certificates/android-certificate.jpg" class="img-fluid mb-3" alt="Android Certificate">
+          <h5 class="mb-1">Android Development</h5>
+          <p class="small text-muted">Issued by ABC Institute</p>
+          <a href="assets/certificates/android-certificate.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="cert-card shadow p-3 bg-white rounded text-center">
+          <img src="assets/img/certificates/uiux-certificate.jpg" class="img-fluid mb-3" alt="UI/UX Certificate">
+          <h5 class="mb-1">UI/UX Design</h5>
+          <p class="small text-muted">Issued by Coursera</p>
+          <a href="assets/certificates/uiux-certificate.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
     <!-- Contact Section -->
