@@ -61,7 +61,6 @@
   }
 }
 
-/* Shake animation */
 @keyframes shakeCert {
   0%, 100% { transform: translate(0); }
   20% { transform: translate(-2px, 2px); }
