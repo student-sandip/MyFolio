@@ -78,22 +78,37 @@
 
 
 .cert-card {
-  transition: 
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border 0.3s ease,
-    background-color 0.3s ease;
-  border-radius: 20px;
-  border: 2px solid transparent;
-  background-color: #ffffff;
   position: relative;
-  z-index: 1;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  z-index: 0;
+  transition: transform 0.3s ease;
 }
 
-.cert-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  border: 2px solid #f3f1f4;
-  box-shadow: 0 10px 20px rgba(149, 13, 253, 0.2);
-  background-color: #d3aff9;
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #950dfd, #ff4ecd, #950dfd);
+  animation: borderSpin 3s linear infinite;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+@keyframes borderSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
