@@ -63,6 +63,7 @@
       perspective: 1000px; 
       text-decoration: none;
     }
+
     .flip-inner {
       position: relative;
       width: 100%;
@@ -70,10 +71,13 @@
       transition: transform 0.6s;
       transform-style: preserve-3d;
     }
+
     a:hover .flip-inner {
       transform: rotateY(180deg); 
     }
-    /* Flip Button Container */
+
+
+/* Flip Button Container */
 .flip-button {
   display: inline-block;
   width: 160px;
@@ -136,6 +140,8 @@
     font-size: 14px;
   }
 }
+
+
 .flip-button:hover .flip-front {
   box-shadow: 0 0 10px #0b5ed7;
 }
@@ -185,7 +191,7 @@
 
 .thank-emoji {
   display: inline-block;
-  font-size: 8px; /* You can adjust this size */
+  font-size: 8px;
   animation: emojiHugBounce 2s ease-in-out infinite;
   transform-origin: center;
 }
@@ -215,10 +221,6 @@
 }
 
 
-
-/* heart rain */
-
-/* Base Styles */
 .thank-wrapper {
   position: relative;
   text-align: center;
@@ -242,7 +244,7 @@
   50% { transform: scale(1.15) rotate(0deg); }
 }
 
-/* Heart Rain Container */
+
 .heart-rain {
   position: absolute;
   top: 0;
@@ -253,7 +255,6 @@
   overflow: hidden;
 }
 
-/* Individual Hearts */
 .heart {
   position: absolute;
   top: -50px;
@@ -270,11 +271,9 @@
     opacity: 0;
   }
 }
+</style>
 
 
-
-
-  </style>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
