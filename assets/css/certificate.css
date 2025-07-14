@@ -3,6 +3,7 @@
   width: 120px;
   height: 120px;
   margin: 0 auto 1rem auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .circle-wrapper {
@@ -15,6 +16,7 @@
   border: solid #950dfd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: white;
+  transition: transform 0.3s ease;
 }
 
 .circle-glow-wrapper::before {
@@ -74,8 +76,8 @@
 }
 .cert-card:hover .circle-wrapper {
   animation: shakeCert 0.5s ease-in-out;
+  transform: scale(1.05);
 }
-
 
 .cert-card {
   position: relative;
@@ -83,7 +85,7 @@
   background: #fff;
   border-radius: 20px;
   z-index: 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cert-card::before {
@@ -102,6 +104,11 @@
 
 .cert-card:hover::before {
   opacity: 1;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes borderSpin {
