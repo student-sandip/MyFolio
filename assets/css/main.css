@@ -1409,3 +1409,21 @@ section,
   transform: translateY(-11px); 
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+.download-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.download-btn:hover {
+    background-color: #007bff;
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px rgba(0,123,255,0.35);
+}
+
