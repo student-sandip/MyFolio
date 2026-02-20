@@ -105,6 +105,9 @@
             <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno2.jpg" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno3.jpg" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno5.jpeg" alt=""></div>
+
+            
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -115,52 +118,116 @@
 
           <div class="col-lg-8" data-aos="fade-up">
             <div class="project-description">
-  <h2>Gaana Suno: Offline + Online Smart Music Experience 🎵</h2>
+
+  <h2>🎵 GaaneSuno – Smart Android Music & Video Player (Offline + Online)</h2>
 
   <p>
-    Gaana Suno is a powerful, modern Android music player that combines both 
-    <b>offline music</b> stored on your device and <b>online streaming</b> using API-based songs. 
-    Built with elegance and performance in mind, it delivers a seamless and immersive audio experience 
-    with smooth transitions, responsive design, and real-time synchronization.
+    GaaneSuno is a modern, feature-rich Android music and video player that seamlessly blends 
+    offline playback with online streaming — all inside one elegant, responsive, and minimal design.
+    It delivers a buttery-smooth UI, powerful playback controls, real-time synchronization,
+    and a premium multimedia experience.
   </p>
 
-  <p>
-    The app brings a wide range of features including:
-    <br><br>
-    🎧 Offline & Online playback support,<br>
-    📡 Online songs loaded via API with thumbnail, title & artist,<br>
-    ⭐ Add/Remove favorites for online songs,<br>
-    📝 Dedicated Favorites screen (only for online songs),<br>
-    ▶️ Play, Pause, Next & Previous controls,<br>
-    🔁 Shuffle & Repeat modes,<br>
-    ⏱️ Real-time seekbar with duration update,<br>
-    🌐 Smooth loading indicators for API and buffering,<br>
-    🎵 Background playback using Foreground Service,<br>
-    🔔 Full Notification Media Controls,<br>
-    🎧 Bluetooth headset & media-button support,<br>
-    🗑️ Delete offline songs with confirmation dialog,<br>
-    📤 Share songs instantly,<br>
-    🔊 Set any offline song as Ringtone,<br>
-    🎨 Beautiful Player UI with theme color extraction,<br>
-    📱 Live sync of currently playing song across activities,<br>
-    🧭 Fully responsive UI across different screen sizes,<br>
-    ⚙️ Settings screen for UI & behavior customization. <br>
-    💻 It also compatible for laptops, tablets and desktops.
-  </p>
+  <hr>
+
+  <h4>🎶 Offline Music Experience</h4>
+  <ul>
+    <li>Play / Pause / Next / Previous controls</li>
+    <li>Stylish animated SeekBar with real-time duration</li>
+    <li>Repeat & Shuffle modes</li>
+    <li>Built-in Sleep Timer</li>
+    <li>Dynamic marquee song & artist display</li>
+    <li>Integrated volume control (Mute / Max toggle)</li>
+    <li>Inter-activity sync using BroadcastReceiver</li>
+    <li>Background playback via MusicService</li>
+    <li>MediaSessionCompat for notification & Bluetooth control</li>
+  </ul>
+
+  <h4>🌐 Online Music Streaming</h4>
+  <ul>
+    <li>Fetches trending tracks from iTunes API</li>
+    <li>Supports Bollywood, Hindi, Bengali, Pop, English tracks</li>
+    <li>Album artwork loading with Glide</li>
+    <li>Smart highlight system for currently playing song</li>
+    <li>Auto-refresh with 5-sec delay to prevent UI flickering</li>
+    <li>SharedPreferences-based resume system</li>
+    <li>Add / Remove Favorites with confirmation alerts</li>
+  </ul>
+
+  <h4>❤️ Favorites Section</h4>
+  <ul>
+    <li>Dedicated FavoritesActivity</li>
+    <li>Remove songs with confirmation dialog</li>
+    <li>Dynamic favorite icon update across activities</li>
+  </ul>
+
+  <h4>🔍 Smart Search & Navigation</h4>
+  <ul>
+    <li>Lightning-fast search (Offline + Online)</li>
+    <li>Bottom Navigation for Music / Online / Favorites</li>
+    <li>Smooth activity transition animations</li>
+    <li>TypeWriter animated splash screen</li>
+  </ul>
+
+  <hr>
+
+  <h4>🎥 Offline Video Player (New Feature)</h4>
 
   <p>
-    Offline songs are scanned directly from device storage, ensuring smooth 
-    <b>completely offline playback</b>. Online songs are streamed using your API source, 
-    supporting thumbnails, metadata, and buffer-based animations. 
-    The Favorites system works exclusively for online songs to keep data lightweight and consistent.
+    GaaneSuno now includes a powerful offline video player that automatically scans 
+    and displays all local and downloaded videos from your device.
   </p>
 
+  <ul>
+    <li>Auto-load local & downloaded videos</li>
+    <li>Responsive grid layout with thumbnails</li>
+    <li>Professional-grade fullscreen video player</li>
+    <li>10-sec rewind / forward controls</li>
+    <li>Auto orientation (Portrait ↔ Landscape)</li>
+    <li>Fullscreen mode with system UI hide</li>
+    <li>Gesture Controls (Brightness, Volume, Seek)</li>
+    <li>HD / Full HD / Ultra HD support</li>
+    <li>Fit / Fill / Zoom scaling options</li>
+    <li>Auto play next video</li>
+    <li>Subtitle support (Embedded + External .srt)</li>
+    <li>Multi-language subtitle selection</li>
+    <li>Dynamic subtitle toggle with Toast feedback</li>
+  </ul>
+
+  <p><em>
+    “Videos don’t just play… they take you back — GaaneSuno lets you relive every moment, frame by frame.” 🎬❤️
+  </em></p>
+
+  <hr>
+
+  <h4>🛠️ Built With</h4>
+  <ul>
+    <li><strong>Java</strong> – Core logic & architecture</li>
+    <li><strong>Android SDK</strong> – System & UI integration</li>
+    <li><strong>MediaPlayer + Service</strong> – Music playback</li>
+    <li><strong>BroadcastReceiver</strong> – Live playback sync</li>
+    <li><strong>ConstraintLayout / LinearLayout</strong> – Responsive UI</li>
+    <li><strong>Glide</strong> – Image loading & caching</li>
+    <li><strong>Material Design Components</strong> – Modern UI</li>
+    <li><strong>SDP / SSP</strong> – Adaptive sizing across devices</li>
+  </ul>
+
+  <hr>
+
+  <h4>🚀 Future Enhancements</h4>
+  <ul>
+    <li>Dark / Light Theme Toggle</li>
+    <li>Offline caching for online songs</li>
+    <li>AI-based Smart Recommendations</li>
+    <li>Lyrics Integration</li>
+    <li>Play Store Release</li>
+  </ul>
+
   <p>
-    Built using <b>Java + XML</b> with a clean architecture, Gaana Suno focuses heavily on 
-    performance, stability, and a polished user experience. 
-    Whether you're enjoying offline tracks, streaming online hits, or managing your own favorites — 
-    Gaana Suno gives you music, your way.
+    GaaneSuno is more than just a player — it’s a blend of art, performance, 
+    and user-focused design. Built with passion by <strong>Sandip Saha</strong>.
   </p>
+
 </div>
 
           </div>
@@ -171,6 +238,7 @@
               <ul>
                 <li><strong>Category</strong> App Development</li>
                 <li><strong>Project date</strong> 15 may, 2025</li>
+                <li><strong>Here's the detail overview of the app 👇🏼</strong> <a href="https://drive.google.com/drive/folders/1NgQPYiQe7FM98L2PcaZCN2_YTkjeUa13" target="_blank" rel="noopener">Click on it.</a></li>
                 <li><strong>Project URL</strong> <a href="https://github.com/student-sandip/Gaane-Suno" target="_blank" rel="noopener">www.GaaneSuno.com</a></li>
                 <a href="https://github.com/student-sandip/Gaane-Suno" class="btn btn-primary btn-sm mt-2 px-2 py-1 btn-heartbeat" style="font-size: 12px;">Visit GitHub</a><br>
                 <a href="https://github.com/student-sandip/Gaane-Suno/releases/tag/v1.0" class="btn btn-success btn-sm mt-2 px-3 py-1 download-btn">
