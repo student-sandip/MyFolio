@@ -1427,3 +1427,190 @@ section,
     box-shadow: 0 6px 12px rgba(0,123,255,0.35);
 }
 
+.live-time-box {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+  /* Important for alignment */
+  width: 100%;
+  max-width: 260px;   /* GitHub button er moto width */
+  margin-top: 15px;
+}
+
+/* .time-glow {
+  font-size: 16px;  
+  font-weight: 600;
+  animation: glow 1.5s infinite alternate;
+} */
+
+.date-location {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff;
+  }
+  to {
+    text-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
+  }
+}
+
+
+.profile-hover-box {
+  display: flex;
+  justify-content: center;
+}
+/* Profile Image Size Fix */
+.profile-hover-box img {
+  width: 200px !important;
+  height: 255px !important;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #00bfff, #0078ff) border-box;
+}
+
+/* Hover Effect */
+.profile-hover-box img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 120, 255, 0.5);
+}
+
+/* Click Effect */
+.profile-hover-box img:active {
+  transform: scale(0.97);
+}
+
+/* ===== Ultra Premium Neon Glass Clock Card ===== */
+
+/* .live-time-box {
+  position: relative;
+  background: rgba(20, 20, 30, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 260px;
+  margin: 15px auto 0 auto;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  cursor: pointer;
+} */
+
+/* Animated Neon Border */
+/* .live-time-box::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  background: linear-gradient(
+    270deg,
+    #00f0ff,
+    #0078ff,
+    #6f00ff,
+    #00f0ff
+  );
+  background-size: 500% 500%;
+  z-index: -1;
+  animation: neonMove 8s ease infinite;
+  filter: blur(8px);
+  opacity: 0.7;
+} */
+
+/* Inner soft glow layer */
+/* .live-time-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.01)
+  );
+  pointer-events: none;
+} */
+
+/* Hover Lift + Strong Glow */
+/* .live-time-box:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 20px 50px rgba(0, 120, 255, 0.5);
+} */
+
+/* Click Press */
+.live-time-box:active {
+  transform: scale(0.96);
+}
+
+
+/* ===== Sync Animation for Image + Clock ===== */
+
+/* .profile-hover-box img,
+.live-time-box {
+  animation: syncFloat 6s ease-in-out infinite;
+} */
+
+/* Floating + Glow Sync */
+/* @keyframes syncFloat {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  }
+
+  50% {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 170, 255, 0.55);
+  }
+} */
+
+/* ===== Breathing Glow + Ripple Effect ===== */
+
+.live-time-box {
+  position: relative;
+  animation: breathingGlow 6s ease-in-out infinite;
+  overflow: hidden;
+}
+
+/* Breathing Soft Glow */
+@keyframes breathingGlow {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  }
+  50% {
+    box-shadow: 0 20px 60px rgba(0, 170, 255, 0.55);
+  }
+}
+
+/* Ripple Light Effect */
+.live-time-box::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(0,180,255,0.15) 0%, transparent 60%);
+  animation: rippleMove 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rippleMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
