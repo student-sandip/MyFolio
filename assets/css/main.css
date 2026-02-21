@@ -1476,8 +1476,7 @@ section,
   display: block;
   margin: 0 auto;
   border: 2px solid transparent;
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(135deg, #00bfff, #0078ff) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #00bfff, #0078ff) border-box;
 }
 
 /* Hover Effect */
