@@ -1615,3 +1615,49 @@ section,
     transform: rotate(360deg);
   }
 }
+
+/* ===== Base Responsive Improvements ===== */
+
+.live-time-box {
+  width: 100%;
+  max-width: 260px;
+  margin: 20px auto;
+  padding: 14px 18px;
+  border-radius: 18px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .live-time-box {
+    max-width: 220px;
+    padding: 12px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .live-time-box {
+    max-width: 90%;
+    padding: 12px;
+    border-radius: 14px;
+    animation: breathingGlowMobile 6s ease-in-out infinite;
+  }
+
+  /* Softer glow for mobile (performance friendly) */
+  @keyframes breathingGlowMobile {
+    0%, 100% {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    50% {
+      box-shadow: 0 12px 35px rgba(0, 170, 255, 0.45);
+    }
+  }
+
+  /* Reduce ripple size for small screens */
+  .live-time-box::after {
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+  }
+}
