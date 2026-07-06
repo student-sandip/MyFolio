@@ -1,0 +1,358 @@
+{
+  "site": {
+    "title": "MyFolio",
+    "logo": {
+      "iconClass": "fab fa-sellcast fa-spin",
+      "text": "MyFolio",
+      "color": "white"
+    }
+  },
+  "navigation": [
+    { "label": "Home", "href": "#hero" },
+    { "label": "About", "href": "#about" },
+    { "label": "Summary", "href": "#resume" },
+    { "label": "Skills", "href": "#services" },
+    { "label": "Projects", "href": "#portfolio" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "backgroundClass": "dark-background",
+    "images": [
+      { "src": "assets/img/senuuya.jpg", "alt": "Photo 1", "active": true },
+      { "src": "assets/img/senuu.jpg", "alt": "Photo 2", "active": false },
+      { "src": "assets/img/ssssss.jpg", "alt": "Photo 3", "active": false }
+    ],
+    "intro": {
+      "heading": "I am Sandip Saha",
+      "typedItems": ["Designer", "Developer", "Learner", "Photographer"]
+    }
+  },
+  "about": {
+    "sectionId": "about",
+    "image": {
+      "src": "assets/img/helloo.jpg",
+      "alt": "",
+      "overlayText": {
+        "line1": "Hi, I'm Sandip 👋",
+        "line2": "Welcome to my portfolio !"
+      }
+    },
+    "basicInfo": {
+      "name": "Sandip Saha",
+      "age": 21,
+      "profile": "full stack developer",
+      "email": "sandipsaha70755@gmail.com",
+      "phone": "(+91)7318862131",
+      "address": "Barasat, WB, 700124"
+    },
+    "resume": {
+      "text": "View My Resume",
+      "url": "https://drive.google.com/file/d/19tE5sG75qAbbWce05Jog7VTNHQ84ove8/view?usp=drive_link/view"
+    },
+    "aboutMe": {
+      "heading": "About Me",
+      "iconClass": "fas fa-user-alt fa-fade",
+      "paragraphs": [
+        "I’m a final-year BCA student at Brainware University, Kolkata, passionate about software development, data analytics, and problem-solving. Throughout my academic journey, I have explored multiple technologies, including Java, Spring Boot, React, Node.js, MySQL, MongoDB, and Android development.",
+        "I have a strong foundation in programming languages such as Java, C, and C++, and I am proficient in web development using HTML, CSS, and JavaScript. I have also gained experience in database management with MySQL and MongoDB.",
+        "I am also a quick learner and have a keen interest in exploring new technologies and frameworks. I am currently focused on enhancing my skills in full-stack development, data analytics."
+      ]
+    }
+  },
+  "resume": {
+    "sectionId": "resume",
+    "title": {
+      "iconClass": "fas fa-id-badge fa-flip",
+      "text": "Summary",
+      "description": "Here's a brief overview of my educational background and professional experience."
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Applications",
+        "duration": "2022 - Present",
+        "institution": "Brainware University, Kolkata, WB",
+        "details": "I have been pursuing my BCA at Brainware University, Kolkata since 2022. I’ve developed strong skills in programming, web development, and software technologies. Currently, I’m in my final year (2025), actively working on Java, React, and full-stack projects."
+      },
+      {
+        "degree": "Higher Secondary Education",
+        "duration": "2021 - 2022",
+        "institution": "Harirampur ASDM High School(H.S.), Harirampur, Dakshin Dinajpur, WB",
+        "details": "Completed Higher Secondary under WBCHSE with a focus on Computer Science and related subjects."
+      },
+      {
+        "degree": "Secondary Education",
+        "duration": "2019 - 2020",
+        "institution": "Harirampur ASDM High School(H.S.), Harirampur, Dakshin Dinajpur, WB",
+        "details": "Completed Madhyamik in 2020 under WBBSE. Continued in the Science stream with Computer Science under WBCHSE."
+      }
+    ],
+    "experience": [
+      {
+        "role": "Business Data Analyst",
+        "duration": "Nov'24 - Jan'25",
+        "company": "LearnKnow Digital",
+        "location": "New Town, Kolkata, WB",
+        "responsibilities": [
+          "Analyzed business data to identify trends and improve processes.",
+          "Collaborated with cross-functional teams to gather requirements.",
+          "Independently handled 20% of assigned data analysis and reporting tasks.",
+          "Technologies used: MS Excel, Google Sheets, SQL, MS Word, PowerPoint."
+        ]
+      },
+      {
+        "role": "MERN Stack Intern",
+        "duration": "Jul'24 - Sep'24",
+        "company": "Webguru Infosystem",
+        "location": "Salt Lake, Sector V, WB",
+        "responsibilities": [
+          "Gained hands-on experience with the MERN Stack.",
+          "Worked on multiple projects enhancing web development skills.",
+          "Built full-stack web applications using the MERN stack.",
+          "Technologies learned: HTML, CSS, JavaScript, React.js, Node.js, MongoDB."
+        ]
+      }
+    ]
+  },
+  "services": {
+    "sectionId": "services",
+    "title": {
+      "iconClass": "fas fa-tools fa-spin",
+      "text": "Skills & Abilities",
+      "description": "Here the skills which I have and working on."
+    },
+    "skills": [
+      {
+        "title": "Web Development",
+        "icon": "bi bi-globe2",
+        "modalTarget": "#webDevModal",
+        "description": "I have a strong foundation in web development, including HTML, CSS, and JavaScript. I am proficient in building responsive and user-friendly websites using modern frameworks like React.js and Node.js."
+      },
+      {
+        "title": "Java",
+        "icon": "bi bi-cup-hot",
+        "modalTarget": "#javaModal",
+        "description": "I have a strong foundation in Java programming, including object-oriented programming concepts. I am proficient in building Java applications and now I am learning Java frameworks like Spring Boot."
+      },
+      {
+        "title": "PHP",
+        "icon": "bi bi-file-code",
+        "modalTarget": "#phpModal",
+        "description": "I am not very proficient in PHP, but I have a basic understanding of PHP programming and its frameworks."
+      },
+      {
+        "title": "Database",
+        "icon": "bi bi-server",
+        "modalTarget": "#databaseModal",
+        "description": "I have also used MySQL and MongoDB for database management in my projects."
+      },
+      {
+        "title": "Soft Skills",
+        "icon": "bi bi-people",
+        "modalTarget": "#softSkillsModal",
+        "description": "I am also good at soft skills like communication, teamwork, and problem-solving."
+      },
+      {
+        "title": "Languages",
+        "icon": "bi bi-translate",
+        "modalTarget": "#languagesModal",
+        "description": "I am fluent in English, Hindi, and Bengali, and I communicate well in these languages."
+      }
+    ]
+  },
+  "portfolio": {
+    "sectionId": "portfolio",
+    "title": {
+      "iconClass": "fas fa-laptop-code fa-fade",
+      "text": "Projects Made",
+      "description": "Here all of my projects are shown below."
+    },
+    "filters": ["All", "Webs", "Apps"],
+    "projects": [
+      {
+        "title": "Snapgram",
+        "image": "assets/img/portfolio/Snapgram.jpg",
+        "type": "web",
+        "description": "Click here to get more details about the project.",
+        "link": "1stProject.html"
+      },
+      {
+        "title": "Event Management App",
+        "image": "assets/img/portfolio/event-manage.jpg",
+        "type": "app",
+        "description": "Simply For manage Your Events OR Works.",
+        "link": "2ndProject.html"
+      },
+      {
+        "title": "PG Life Website",
+        "image": "assets/img/portfolio/pglife.jpg",
+        "type": "web",
+        "description": "Find nearby PG's near You.",
+        "link": "3rdProject.html"
+      },
+      {
+        "title": "My Portfolio",
+        "image": "assets/img/portfolio/my-portfolio.jpg",
+        "type": "web",
+        "description": "My Portfolio Website.",
+        "link": "4thProject.html"
+      },
+      {
+        "title": "Simple Calculator",
+        "image": "assets/img/portfolio/calculator-app.jpg",
+        "type": "app",
+        "description": "Click here to get more details.",
+        "link": "5thProject.html"
+      },
+      {
+        "title": "Gaane Suno: Music App",
+        "image": "assets/img/portfolio/music-player.jpg",
+        "type": "app",
+        "description": "It is an music player, click here to get more details.",
+        "link": "6thProject.html"
+      }
+    ]
+  },
+  "stats": {
+    "sectionId": "stats",
+    "class": "stats section accent-background",
+    "slideshow": {
+      "image": "assets/img/slides/slide1.jpg",
+      "alt": "",
+      "style": {
+        "width": "100%",
+        "maxHeight": "300px",
+        "objectFit": "cover"
+      },
+      "aos": "fade-in"
+    },
+    "content": {
+      "aos": "fade-up",
+      "aosDelay": "100",
+      "rows": []
+    }
+  },
+  "contact": {
+    "sectionId": "contact",
+    "class": "contact section",
+    "title": {
+      "iconClass": "fas fa-headset fa-shake",
+      "text": "Get in Touch",
+      "description": "Here's the details how you can reach me."
+    },
+    "contactInfo": [
+      {
+        "icon": "bi bi-geo-alt",
+        "title": "Address",
+        "value": "Barasat, Kolkata, WB, 700124",
+        "link": "https://www.google.com/maps?q=Barasat,+Kolkata,+WB,+700124"
+      },
+      {
+        "icon": "bi bi-telephone",
+        "title": "Phone",
+        "value": "+91 7318862131",
+        "link": "tel:+917318862131"
+      },
+      {
+        "icon": "bi bi-envelope",
+        "title": "Email",
+        "value": "sandipsaha70755@gmail.com",
+        "link": "mailto:sandipsaha70755@gmail.com"
+      }
+    ],
+    "contactForm": {
+      "action": "https://formsubmit.co/myfolio0304@gmail.com",
+      "method": "POST",
+      "fields": [
+        {
+          "type": "text",
+          "name": "name",
+          "placeholder": "Your Name",
+          "required": true
+        },
+        {
+          "type": "email",
+          "name": "email",
+          "placeholder": "Your Email",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "subject",
+          "placeholder": "Subject",
+          "required": true
+        },
+        {
+          "type": "textarea",
+          "name": "message",
+          "placeholder": "Your Message",
+          "rows": 5,
+          "required": true
+        }
+      ],
+      "hiddenFields": {
+        "_next": "https://student-sandip.github.io/MyFolio/thank-you.html"
+      },
+      "button": {
+        "type": "submit",
+        "class": "fly-animate",
+        "text": "Send",
+        "icon": "fas fa-paper-plane"
+      }
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "class": "footer accent-background",
+    "copyright": {
+      "text": "© Copyright MyFolio All Rights Reserved",
+      "sitename": "MyFolio"
+    },
+    "socialLinks": [
+      {
+        "platform": "Twitter",
+        "url": "https://x.com/Sandip40165?t=PopsXwbLzECfBySH5hvZJw&s=08",
+        "iconClass": "bi bi-twitter-x",
+        "title": "Visit my Twitter profile"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100053541991397",
+        "iconClass": "bi bi-facebook",
+        "title": "Visit my Facebook profile"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/__sandipp__03?igsh=MXRxd3F1enNwdGZmNA==",
+        "iconClass": "bi bi-instagram",
+        "title": "Visit my Instagram profile"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sandip-saha-dev",
+        "iconClass": "bi bi-linkedin",
+        "title": "Visit my LinkedIn profile"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/student-sandip",
+        "iconClass": "bi bi-github",
+        "title": "Visit my Github profile"
+      }
+    ],
+    "whatsapp": {
+      "url": "https://wa.me/+917318862131",
+      "iconClass": "fab fa-whatsapp",
+      "id": "whatsapp-icon"
+    },
+    "credits": {
+      "text": "Designed with ❤️ by Sandip Saha",
+      "designer": "Sandip Saha",
+      "designerLink": "https://www.linkedin.com/in/sandip-saha-dev",
+      "emoji": {
+        "src": "https://www.emoji.family/api/emojis/2764/fluent/svg",
+        "alt": "heart",
+        "size": "1.2em"
+      }
+    }
+  }
+}

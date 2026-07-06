@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - MyFolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Required: Bootstrap CSS + AOS CSS in <head> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon/favicon.ico" rel="icon">
+  <!-- <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+
+  <!-- Apple Touch Icon (for iPhones/iPads) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/scroll.css">
+  <link rel="stylesheet" href="assets/css/visitgithub.css">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top bg-black" style="padding: 10px 0;">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+    <!-- Optional logo section -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="logo me-auto" style="font-size: 24px;">
+        <i class="fab fa-sellcast fa-spin me-2"></i>
+      </h1>
+      <h1 style="font-size: 24px; margin: 0;">MyFolio</h1>
+    </a> 
+
+    <!-- Navigation Menu -->
+    <nav id="navmenu" class="navmenu">
+      <ul style="margin: 0; padding: 0;">
+        <li><a href="index.html" style="color: darkgrey; font-size: 16px;">Home</a></li>
+        <li><a href="#" style="font-size: 16px;">Project Details</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Toggle Button -->
+    <i class="mobile-nav-toggle d-xl-none bi bi-list text-white" style="font-size: 24px;"></i>
+  </div>
+</header>
+
+
+  <main class="main">
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/projectsimg/event1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/event2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/event3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/event4.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="project-description">
+              <h2> Event Management App: An Application to manage and list down your events & works. </h2>
+
+              <p>It is a user-friendly event management application designed to streamline the 
+                planning, organization, and execution of events of all sizes.</p>
+
+              <p>Whether it's a corporate seminar, wedding, college fest, or birthday party, it 
+                helps users manage every detail from start to finish. The app allows event organizers to create events, 
+                send invitations, track RSVPs, manage budgets, assign tasks, and monitor progress through an intuitive dashboard.</p>
+
+              <p>This application is built using the MERN stack — React.js for the frontend, Node.js and Express.js for the backend, and MongoDB for the database.
+                 It ensures a full-stack JavaScript solution, offering seamless performance, scalability, and efficient data handling.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong> Web design</li>
+                <li><strong>Project date</strong> 15 April, 2024</li>
+                <li><strong>Project URL</strong> <a href="https://github.com/student-sandip/Event-Management" target="_blank" rel="noopener">www.example.com</a></li>
+                <a href="https://github.com/student-sandip/Event-Management" class="btn btn-primary btn-sm mt-2 px-2 py-1 btn-heartbeat" style="font-size: 12px;">Visit GitHub</a>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">MyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/Sandip40165?t=PopsXwbLzECfBySH5hvZJw&s=08" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100053541991397" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/__sandipp__03" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sandip-saha-dev" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/student-sandip" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="credits">
+        Designed with <img src="https://www.emoji.family/api/emojis/2764/fluent/svg" alt="" style="width: 1.2em; height: 1.2em;" /> by <a href="https://www.linkedin.com/in/sandip-saha-dev">Sandip Saha</a>      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- AOS Init -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- scroll ball -->
+<script>
+  const scrollTopBtn = document.getElementById("scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+</body>
+
+</html>

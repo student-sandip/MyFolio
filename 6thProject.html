@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - MyFolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Required: Bootstrap CSS + AOS CSS in <head> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon/favicon.ico" rel="icon">
+  <!-- <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+
+  <!-- Apple Touch Icon (for iPhones/iPads) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/scroll.css">
+  <link rel="stylesheet" href="assets/css/visitgithub.css">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top bg-black" style="padding: 10px 0;">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+    <!-- Optional logo section -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="logo me-auto" style="font-size: 24px;">
+        <i class="fab fa-sellcast fa-spin me-2"></i>
+      </h1>
+      <h1 style="font-size: 24px; margin: 0;">MyFolio</h1>
+    </a> 
+
+    <!-- Navigation Menu -->
+    <nav id="navmenu" class="navmenu">
+      <ul style="margin: 0; padding: 0;">
+        <li><a href="index.html" style="color: darkgrey; font-size: 16px;">Home</a></li>
+        <li><a href="#" style="font-size: 16px;">Project Details</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Toggle Button -->
+    <i class="mobile-nav-toggle d-xl-none bi bi-list text-white" style="font-size: 24px;"></i>
+  </div>
+</header>
+
+  <main class="main">
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/projectsimg/gaanesuno5.jpeg" alt=""></div>
+
+            
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="project-description">
+
+  <h2>🎵 GaaneSuno – Smart Android Music & Video Player (Offline + Online)</h2>
+
+  <p>
+    GaaneSuno is a modern, feature-rich Android music and video player that seamlessly blends 
+    offline playback with online streaming — all inside one elegant, responsive, and minimal design.
+    It delivers a buttery-smooth UI, powerful playback controls, real-time synchronization,
+    and a premium multimedia experience.
+  </p>
+
+  <hr>
+
+  <h4>🎶 Offline Music Experience</h4>
+  <ul>
+    <li>Play / Pause / Next / Previous controls</li>
+    <li>Stylish animated SeekBar with real-time duration</li>
+    <li>Repeat & Shuffle modes</li>
+    <li>Built-in Sleep Timer</li>
+    <li>Dynamic marquee song & artist display</li>
+    <li>Integrated volume control (Mute / Max toggle)</li>
+    <li>Inter-activity sync using BroadcastReceiver</li>
+    <li>Background playback via MusicService</li>
+    <li>MediaSessionCompat for notification & Bluetooth control</li>
+  </ul>
+
+  <h4>🌐 Online Music Streaming</h4>
+  <ul>
+    <li>Fetches trending tracks from iTunes API</li>
+    <li>Supports Bollywood, Hindi, Bengali, Pop, English tracks</li>
+    <li>Album artwork loading with Glide</li>
+    <li>Smart highlight system for currently playing song</li>
+    <li>Auto-refresh with 5-sec delay to prevent UI flickering</li>
+    <li>SharedPreferences-based resume system</li>
+    <li>Add / Remove Favorites with confirmation alerts</li>
+  </ul>
+
+  <h4>❤️ Favorites Section</h4>
+  <ul>
+    <li>Dedicated FavoritesActivity</li>
+    <li>Remove songs with confirmation dialog</li>
+    <li>Dynamic favorite icon update across activities</li>
+  </ul>
+
+  <h4>🔍 Smart Search & Navigation</h4>
+  <ul>
+    <li>Lightning-fast search (Offline + Online)</li>
+    <li>Bottom Navigation for Music / Online / Favorites</li>
+    <li>Smooth activity transition animations</li>
+    <li>TypeWriter animated splash screen</li>
+  </ul>
+
+  <hr>
+
+  <h4>🎥 Offline Video Player (New Feature)</h4>
+
+  <p>
+    GaaneSuno now includes a powerful offline video player that automatically scans 
+    and displays all local and downloaded videos from your device.
+  </p>
+
+  <ul>
+    <li>Auto-load local & downloaded videos</li>
+    <li>Responsive grid layout with thumbnails</li>
+    <li>Professional-grade fullscreen video player</li>
+    <li>10-sec rewind / forward controls</li>
+    <li>Auto orientation (Portrait ↔ Landscape)</li>
+    <li>Fullscreen mode with system UI hide</li>
+    <li>Gesture Controls (Brightness, Volume, Seek)</li>
+    <li>HD / Full HD / Ultra HD support</li>
+    <li>Fit / Fill / Zoom scaling options</li>
+    <li>Auto play next video</li>
+    <li>Subtitle support (Embedded + External .srt)</li>
+    <li>Multi-language subtitle selection</li>
+    <li>Dynamic subtitle toggle with Toast feedback</li>
+  </ul>
+
+  <p><em>
+    “Videos don’t just play… they take you back — GaaneSuno lets you relive every moment, frame by frame.” 🎬❤️
+  </em></p>
+
+  <hr>
+
+  <h4>🛠️ Built With</h4>
+  <ul>
+    <li><strong>Java</strong> – Core logic & architecture</li>
+    <li><strong>Android SDK</strong> – System & UI integration</li>
+    <li><strong>MediaPlayer + Service</strong> – Music playback</li>
+    <li><strong>BroadcastReceiver</strong> – Live playback sync</li>
+    <li><strong>ConstraintLayout / LinearLayout</strong> – Responsive UI</li>
+    <li><strong>Glide</strong> – Image loading & caching</li>
+    <li><strong>Material Design Components</strong> – Modern UI</li>
+    <li><strong>SDP / SSP</strong> – Adaptive sizing across devices</li>
+  </ul>
+
+  <hr>
+
+  <h4>🚀 Future Enhancements</h4>
+  <ul>
+    <li>Dark / Light Theme Toggle</li>
+    <li>Offline caching for online songs</li>
+    <li>AI-based Smart Recommendations</li>
+    <li>Lyrics Integration</li>
+    <li>Play Store Release</li>
+  </ul>
+
+  <p>
+    GaaneSuno is more than just a player — it’s a blend of art, performance, 
+    and user-focused design. Built with passion by <strong>Sandip Saha</strong>.
+  </p>
+
+</div>
+
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong> App Development</li>
+                <li><strong>Project date</strong> 15 may, 2025</li>
+                <li><strong>Here's the detail overview of the app 👇🏼</strong> <a href="https://drive.google.com/drive/folders/1NgQPYiQe7FM98L2PcaZCN2_YTkjeUa13" target="_blank" rel="noopener">Click on it.</a></li>
+                <li><strong>Project URL</strong> <a href="https://github.com/student-sandip/Gaane-Suno" target="_blank" rel="noopener">www.GaaneSuno.com</a></li>
+                <a href="https://github.com/student-sandip/Gaane-Suno" class="btn btn-primary btn-sm mt-2 px-2 py-1 btn-heartbeat" style="font-size: 12px;">Visit GitHub</a><br>
+                <a href="https://github.com/student-sandip/Gaane-Suno/releases/tag/v1.0" class="btn btn-success btn-sm mt-2 px-3 py-1 download-btn">
+                  <i class="fa fa-download fa-fade me-2"></i> Download APK</a>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">MyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/Sandip40165?t=PopsXwbLzECfBySH5hvZJw&s=08" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100053541991397" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/__sandipp__03" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sandip-saha-dev" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/student-sandip" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="credits">
+        Designed with <img src="https://www.emoji.family/api/emojis/2764/fluent/svg" alt="" style="width: 1.2em; height: 1.2em;" /> by <a href="https://www.linkedin.com/in/sandip-saha-dev">Sandip Saha</a>      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+  <!-- AOS Init -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- scroll ball -->
+<script>
+  const scrollTopBtn = document.getElementById("scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>

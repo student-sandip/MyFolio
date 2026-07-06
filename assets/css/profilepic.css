@@ -1,0 +1,101 @@
+.image-tilt {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.image-tilt:hover {
+  transform: scale(1.02) rotateZ(1deg);
+  box-shadow: 0 0 30px #c900ff99, 0 0 60px #c900ff44;
+}
+
+.image-tilt img,
+.tilt-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.image-tilt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  transform: skewX(-25deg);
+  z-index: 3;
+}
+
+.image-tilt:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.image-tilt:hover img,
+.image-tilt:hover .tilt-img {
+  filter: grayscale(0%);
+}
+.image-tilt .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 20px 15px 50px 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.image-tilt:hover .overlay-text {
+  opacity: 1;
+}
+
+.wave-hand img {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: baseline;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .image-tilt .overlay-text {
+    font-size: 0.95rem;
+    padding: 20px 10px 30px 10px;
+    line-height: 1.9;
+  }
+}
